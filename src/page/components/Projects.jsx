@@ -4,7 +4,7 @@ import CubeEcomPAge from '../images/cube-ecom-prj-img.png'
 export default function Projects() {
   return (
     <>
-    <div className="mb-16 border-b border-gray-800">
+    <div id='projects' className="mb-16 border-b border-gray-800">
                 <h2 className="mb-2 title sm:text-4xl md:text-5xl">
                 Process of creating creative pages
                 </h2>

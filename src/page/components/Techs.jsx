@@ -4,7 +4,7 @@ import ComsTech from "./ComsTech";
 export default function Techs() {
   return (
     <>
-    <div className="mb-16">
+    <div id='techs' className="mb-16">
                 <h2 className="title sm:text-4xl md:text-5xl">Customer testimonials</h2>
                 <p className="intro mx-auto sm:max-w-xl">
                 Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper

@@ -22,7 +22,7 @@ export default function Footer() {
                     ></path>
                     </svg>
                 </a>
-                <a href="#" class="p-4 text-indigo-700 hover:text-indigo-400">
+                <a href="https://twitter.com/Soumen81845556" class="p-4 text-indigo-700 hover:text-indigo-400">
                     <svg
                     class="fill-current"
                     width="16"
@@ -36,7 +36,7 @@ export default function Footer() {
                     ></path>
                     </svg>
                 </a>
-                <a href="#" class="p-4 text-indigo-700 hover:text-indigo-400">
+                <a href="https://www.instagram.com/soumen__.02/" class="p-4 text-indigo-700 hover:text-indigo-400">
                     <svg
                     class="fill-current"
                     width="16"
@@ -61,19 +61,18 @@ export default function Footer() {
                 </div>
                 <div class="flex flex-col justify-between mb-0 text-center sm:flex-row">
                 <p class="order-last mb-4 text-sm text-gray-500 sm:order-first">
-                Designed by
-                <a href="https://cruip.com/" class="text-white">Cruip</a>. Coded by
-                <a href="https://michelegera.dev/" class="text-white">michelegera</a>
+                Coded by
+                <a href="#myimage" class="text-white">SoumenBhunia</a>
                 </p>
                 <ul class="flex flex-row justify-center mb-6 -ml-4 -mr-4 text-sm">
                 <li>
-                    <a href="#" class="px-4 text-gray-500 hover:text-white">Contact</a>
+                    <a href="#projects" class="px-4 text-gray-500 hover:text-white">Projects</a>
                 </li>
                 <li>
-                    <a href="#" class="px-4 text-gray-500 hover:text-white">About us</a>
+                    <a href="#myimage" class="px-4 text-gray-500 hover:text-white">About me</a>
                 </li>
                 <li>
-                    <a href="#" class="px-4 text-gray-500 hover:text-white">FAQ's</a>
+                    <a href="#techs" class="px-4 text-gray-500 hover:text-white">Techs</a>
                 </li>
                 </ul>
             </div>

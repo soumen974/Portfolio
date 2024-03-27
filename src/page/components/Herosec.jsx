@@ -16,18 +16,18 @@ export default function Herosec() {
             <div className="flex flex-col justify-center max-w-xs mx-auto mb-12 sm:max-w-full sm:flex-row" >
                 <a
                 className="w-full mb-4 whitespace-no-wrap bg-indigo-600 btn btn-tall md:w-auto hover:bg-indigo-500 sm:mr-2"
-                href="#"
+                href="mailto:me.soumen.bhunia@gmail.com?subject=Hiring%20Inquiry&amp;body=Hi%20Soumen%2C%0A%0AI%20am%20[Your%20Name].%20I%20want%20you%20to%20work%20with%20us.%20I%20want%20to%20hire%20you."
                 >
-                Get started
+               Open for Discussion
                 </a>
                 <a
                 className="w-full mb-4 whitespace-no-wrap bg-gray-800 btn btn-tall md:w-auto hover:bg-gray-600 sm:ml-2"
-                href="#"
+                href="https://github.com/soumen974"
                 >
                 View on Github
                 </a>
             </div>
-            <div className="mb-16">
+            <div id='myimage' className="mb-16">
                 <img
                 className="block w-full max-w-5xl mx-auto rounded"
                 src={MyBannerImage}
