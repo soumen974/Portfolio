@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Techs from './components/Techs'
 import Getcontact from './components/Getcontact'
 import Footer from './components/Footer'
+import Drawer from './components/Drawer'
 
 export default function Landing() {
   return (
@@ -16,6 +17,7 @@ export default function Landing() {
         <div className="container relative">
             
             <Nav/>
+            <Drawer/>
             <Herosec/>
             <Servicesec/>
             <Projects/>
