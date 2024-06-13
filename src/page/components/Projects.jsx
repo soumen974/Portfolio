@@ -19,16 +19,16 @@ export default function Projects() {
                 at volutpat diam ut venenatis.
                 </p>
 
-                <div className="flex justify-end mb-8 sm:flex-row ">
+                <div className="flex flex-col mb-8 sm:flex-row">
                     <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
                         <img
-                        className=""
+                        className="rounded-sm"
                         src={CubeEcomPAge}
                         alt=""
                         />
                     </div>
                     
-                    <div
+                <div
                         className="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
                     >
                         <p
@@ -61,13 +61,13 @@ export default function Projects() {
                
 
                 <div className="flex flex-col mb-8 sm:flex-row">
-                <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
-                    <img
-                    className="rounded-sm"
-                    src={workfoilio}
-                    alt=""
-                    />
-                </div>
+                    <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
+                        <img
+                        className="rounded-sm"
+                        src={workfoilio}
+                        alt=""
+                        />
+                    </div>
                 <div
                     className="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pl-16"
                 >
