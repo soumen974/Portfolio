@@ -2,6 +2,8 @@ import React from 'react'
 import ComsServs from "./ComsServs";
 import uiux  from "../images/ui-ux-icon.svg";
 import next from "../images/feature-tile-icon-02.fa91ca05.svg.svg";
+import mern from "../images/mern.svg";
+
 export default function Servicesec() {
   return (
     <>
@@ -16,6 +18,7 @@ export default function Servicesec() {
                 </p>
                 <ul className="flex flex-col flex-wrap justify-center mb-20 text-center  sm:flex-row" >
                 <ComsServs 
+                imgsrc={mern}
                 title={"MERN dev"}
                 desc={"Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatcupidatat."}
                 />

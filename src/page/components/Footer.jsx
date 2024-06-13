@@ -74,6 +74,9 @@ export default function Footer() {
                 <li>
                     <a href="#techs" class="px-4 text-gray-500 hover:text-white">Techs</a>
                 </li>
+                <li>
+                    <a href="https://www.upwork.com/freelancers/~018b00e28a0f4232b7?mp_source=share" class="px-4 text-gray-500 hover:text-white">freelancing</a>
+                </li>
                 </ul>
             </div>
     </>

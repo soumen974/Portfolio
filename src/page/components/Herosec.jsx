@@ -27,12 +27,15 @@ export default function Herosec() {
                 View on Github
                 </a>
             </div>
-            <div id='myimage' className="mb-16">
+            <div id='myimage' className="mb-16 relative">
                 <img
-                className="block w-full max-w-5xl mx-auto rounded"
+                className="relative block w-full max-w-5xl mx-auto rounded"
                 src={MyBannerImage}
                 alt=""
                 />
+                <div className=" absolute bottom-1/4 right-1/3 text-white text-xl lg:text-5xl font-bold">
+                  I'm Soumen Bhunia
+                </div>
             </div>
     
     </>

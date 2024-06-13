@@ -1,7 +1,6 @@
 import React from 'react'
-import HTML from "../images/HTML-icon.svg";
 
-export default function ComsTech() {
+export default function ComsTech(Props) {
   return (
     <>
         <div className="max-w-sm p-4 mx-auto  md:max-w-full md:mx-0 md:w-1/2 lg:w-1/5">
@@ -23,12 +22,12 @@ export default function ComsTech() {
             <blockquote
                 className="pb-8 mb-4 mt-4 text-lg border-b border-gray-700"
             >
-                <img className='w-[9rem]' src={HTML} alt="" />
+                <img className='w-[9rem]' src={Props.imgserc} alt="" />
             </blockquote>
             <p className="font-semibold">
-                <span className="text-white">Roman Level</span>
+                <span className="text-white">{Props.cardSubName}</span>
                 <span className="text-gray-700">/</span>
-                <a href="#" className="text-green-400 hover:text-green-300">HTML</a>
+                <a href="#" className="text-green-400 hover:text-green-300">{Props.CardName}</a>
             </p>
             </div>
         </div>

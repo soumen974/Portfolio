@@ -17,7 +17,7 @@ export default function Landing() {
         <div className="container relative">
             
             <Nav/>
-            <Drawer/>
+            {/* <Drawer/> */}
             <Herosec/>
             <Techs/>
             <Projects/>
