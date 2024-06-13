@@ -20,43 +20,43 @@ export default function Projects() {
                 </p>
 
                 <div className="flex justify-end mb-8 sm:flex-row ">
-            <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last">
-                <img
-                className=""
-                src={CubeEcomPAge}
-                alt=""
-                />
-            </div>
-            
-            <div
-                className="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
-            >
-                <p
-                className="mb-2 text-sm font-semibold leading-none text-center text-indigo-600 uppercase sm:text-left"
-                >
-                 E-Commerce rubics cube selling and buying platform
-                </p>
-                <h3 className="title title-small sm:text-left md:text-4xl">
-                Cubikor-Ecommers fullstack Project
-                </h3>
-                <p className="text md:text-left">
-                The Cube E-Commerce Frontend is a web application designed to provide users with an intuitive and seamless shopping experience. It leverages the Cube UI framework to create a responsive, visually appealing, and user-friendly interface for browsing and purchasing products online.
-
-                Features
-                
-                <ul role="list" className="list-disc space-y-2 pl-4 pt-4 text-sm">
+                    <div className="flex items-center mb-8 sm:w-1/2 md:w-5/12">
+                        <img
+                        className=""
+                        src={CubeEcomPAge}
+                        alt=""
+                        />
+                    </div>
                     
-                  
-                    <li>Browse through a wide range of products organized into categories.</li>
-                    <li>View product details, including images, descriptions, prices, and availability.</li>
-                    <li>Add products to the shopping cart.</li>
-                    <li>Adjust product quantities and remove items from the cart...more</li>
-                    
-                </ul>
+                    <div
+                        className="flex flex-col justify-center mb-8 sm:w-1/2 md:w-7/12 sm:pr-16"
+                    >
+                        <p
+                        className="mb-2 text-sm font-semibold leading-none text-center text-indigo-600 uppercase sm:text-left"
+                        >
+                        E-Commerce rubics cube selling and buying platform
+                        </p>
+                        <h3 className="title title-small sm:text-left md:text-4xl">
+                        Cubikor-Ecommers fullstack Project
+                        </h3>
+                        <p className="text md:text-left">
+                        The Cube E-Commerce Frontend is a web application designed to provide users with an intuitive and seamless shopping experience. It leverages the Cube UI framework to create a responsive, visually appealing, and user-friendly interface for browsing and purchasing products online.
 
-                </p>
-            </div>
-         </div>
+                        Features
+                        
+                        <ul role="list" className="list-disc space-y-2 pl-4 pt-4 text-sm">
+                            
+                        
+                            <li>Browse through a wide range of products organized into categories.</li>
+                            <li>View product details, including images, descriptions, prices, and availability.</li>
+                            <li>Add products to the shopping cart.</li>
+                            <li>Adjust product quantities and remove items from the cart...more</li>
+                            
+                        </ul>
+
+                        </p>
+                    </div>
+                </div>
 
                
 
