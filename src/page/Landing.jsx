@@ -19,9 +19,11 @@ export default function Landing() {
             <Nav/>
             <Drawer/>
             <Herosec/>
-            <Servicesec/>
-            <Projects/>
             <Techs/>
+            <Projects/>
+            <Servicesec/>
+            
+           
             <Getcontact/>
             <Footer/>
 
