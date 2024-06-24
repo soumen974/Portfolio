@@ -3,6 +3,7 @@ import React from "react";
 import { motion, useScroll, useTransform, useSpring, MotionValue } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { StaticImageData } from "next/image";
 import pcOne from "../assets/Screenshot from 2024-05-02 21-27-28.png";
 import pc2 from "../assets/Screenshot from 2024-05-04 20-26-28.png";
 import pc3 from "../assets/Screenshot from 2024-06-25 00-16-50.png";
@@ -19,7 +20,13 @@ import pc11 from "../assets/Screenshot from 2024-06-25 00-58-14.png";
 import pc12 from "../assets/Screenshot from 2024-06-25 01-10-00.png";
 import pc13 from "../assets/Screenshot from 2024-06-25 01-12-02.png";
 import pc14 from "../assets/Screenshot from 2024-06-25 01-12-18.png";
-const products = [
+
+interface Product {
+  title: string;
+  link: string;
+  thumbnail: StaticImageData | string;
+}
+const products: Product[] = [
   {
     title: "Moonbeam",
     link: "/",
@@ -187,11 +194,7 @@ const ProductCard = ({
   product,
   translate,
 }: {
-  product: {
-    title: string;
-    link: string;
-    thumbnail: string;
-  };
+  product: Product;
   translate: MotionValue<number>;
 }) => {
   return (
