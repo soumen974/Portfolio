@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Poppins } from 'next/font/google'
 import "./globals.css";
 import HeroParallax from "@/components/HeroParallaxDemo";
@@ -10,8 +10,7 @@ import { AnimatedPinDemo } from "@/components/AnimatedPinDemo";
 import { TracingBeamDemo } from "@/components/TracingBeamDemo";
 import EvervaultCard  from "@/components/EvervaultCardDemo";
 
-// const inter = Inter({ subsets: ["latin"] });
-const poppins = Poppins({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Soumen Bhunia | Portfolio",
@@ -26,15 +25,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       
-    <body  className={Poppins.className}>
-      
-      <div className="mx-auto max-w-6xl py-32 sm:py-10 lg:py-10">
+    <body  className={''}>
+      {/* mx-auto max-w-6xl py-32 sm:py-10 lg:py-10 */}
+      <div className="">
         <HeroHighlightDemo/>
         <HeroParallax/>
-        <div className="flex">
+        <div className="flex justify-center">
         <AnimatedPinDemo/>
-        <EvervaultCard/>
+        
         </div>
+        <EvervaultCard/>
         
         <TracingBeamDemo/>
         <BackgroundBeamsDemo/>
