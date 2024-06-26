@@ -62,7 +62,7 @@ export const FloatingNav = ({
           className
         )}
       >
-        <div className=" flex  justify-between">
+        <div className=" flex flex-row-reverse  justify-between">
           <div className="flex    border border-transparent dark:border-white/[0.2] rounded-full dark:bg-[#18181B] bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]  pr-2 pl-4 py-2  items-center justify-center space-x-2">
             {navItems.map((navItem: any, idx: number) => (
               <Link

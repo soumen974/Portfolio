@@ -9,6 +9,8 @@ import BackgroundBeamsDemo from "@/components/BackgroundBeamsDemo";
 import { AnimatedPinDemo } from "@/components/AnimatedPinDemo";
 import { TracingBeamDemo } from "@/components/TracingBeamDemo";
 import EvervaultCard  from "@/components/EvervaultCardDemo";
+import  BackgroundBeams  from "@/components/ui/background-beams";
+
 
 import  Navigationbar  from "../components/Navigation/Navigationbar";
 
@@ -29,6 +31,9 @@ export default function RootLayout({
       
     <body  className={''}>
     <div className="relative mx-auto max-w-screen  px-2  ">
+      <div className="absolute -z-10 inset-x-0 -inset-y-[4rem] ">
+          <BackgroundBeams/>
+      </div>
        <div className="mx-auto max-w-4xl   p-5  bg-red-00 ">
          <div className="z-50"><Navigationbar/></div>
          <div className="max-w-2xl mx-auto mt-28 ">
