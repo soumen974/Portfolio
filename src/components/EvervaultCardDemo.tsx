@@ -9,7 +9,7 @@ export default function EvervaultCardDemo() {
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
 
-      <EvervaultCard text="hover" />
+      <EvervaultCard text="Placement module" />
 
       <h2 className="dark:text-white text-black mt-4 text-sm font-light">
         Hover over this card to reveal an awesome effect. Running out of copy

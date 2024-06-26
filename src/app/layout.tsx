@@ -10,6 +10,8 @@ import { AnimatedPinDemo } from "@/components/AnimatedPinDemo";
 import { TracingBeamDemo } from "@/components/TracingBeamDemo";
 import EvervaultCard  from "@/components/EvervaultCardDemo";
 
+import  Navigationbar  from "../components/Navigation/Navigationbar";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -26,21 +28,33 @@ export default function RootLayout({
     <html lang="en" className="dark">
       
     <body  className={''}>
-      {/* mx-auto max-w-6xl py-32 sm:py-10 lg:py-10 */}
-      <div className="">
+    <div className="relative mx-auto max-w-screen  px-2  ">
+       <div className="mx-auto max-w-4xl   p-5  bg-red-00 ">
+         <div className="z-50"><Navigationbar/></div>
+         <div className="max-w-2xl mx-auto mt-28 ">
+         {children}
+         </div>
+      </div>
+    </div>
+
+      {/* <div className="">
         <HeroHighlightDemo/>
         <HeroParallax/>
-        <div className="flex justify-center">
-        <AnimatedPinDemo/>
-        
+        <h1 className="flex justify-center py-10 text-4xl">Projects</h1>
+
+        <div className="grid grid-cols-2 px-10 py-10 lg:grid-cols-3">
+          <AnimatedPinDemo />
+          <EvervaultCard />
+          <EvervaultCard/>
+          <EvervaultCard/>
+          <EvervaultCard/>
+          <EvervaultCard/>
         </div>
-        <EvervaultCard/>
+        
         
         <TracingBeamDemo/>
         <BackgroundBeamsDemo/>
-      </div>
-      
-      {children}
+      </div> */}
     </body>
   </html>
   );

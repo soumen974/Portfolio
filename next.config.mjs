@@ -4,4 +4,5 @@ const nextConfig = {
       domains: ['aceternity.com'],
     },
   };
+  
 export default nextConfig;
