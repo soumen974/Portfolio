@@ -20,6 +20,17 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+    },
+    keyframes: {
+      scroll: {
+        to: {
+          transform: "translate(calc(-50% - 0.5rem))",
+        },
+      },
     },
   },
   plugins: [
@@ -38,10 +49,24 @@ const config: Config = {
     },
     addVariablesForColors2,
     addVariablesForColors3,
-    backgroundgrid
+    backgroundgrid,
+    addVariablesForColors4,
+
   ],
   
 };
+
+function addVariablesForColors4({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
+
 
 function addVariablesForColors3({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));

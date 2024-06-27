@@ -38,6 +38,7 @@ export default function RootLayout({
          <div className="z-50"><Navigationbar/></div>
          <div className="max-w-2xl mx-auto mt-28 ">
          {children}
+         {/* <TracingBeamDemo/> */}
          </div>
       </div>
     </div>
@@ -57,7 +58,7 @@ export default function RootLayout({
         </div>
         
         
-        <TracingBeamDemo/>
+       
         <BackgroundBeamsDemo/>
       </div> */}
     </body>
