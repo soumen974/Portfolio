@@ -122,8 +122,8 @@ export default function Home() {
           <div className="py-5 grid grid-cols-3 gap-3 md:grid-cols-3  justify-between ">
 
             <div className="bg-white p-2 md:p-4 rounded-xl">
-              <div className=" py-4 px-2">
-                <PiCodeBold className='md:w-40  md:h-40  w-28 h-28 text-black '/>
+              <div className=" py-4 ">
+                <PiCodeBold className='md:w-40  md:h-40  w-24 h-24 text-black '/>
               </div>
               <h1 className='text-black font-bold w-fit hidden sm:block'>Frontend developement</h1>
               <p className='text-black font-thin hidden sm:block'>I build user friendly web apps. </p>
@@ -132,7 +132,7 @@ export default function Home() {
 
             <div className="bg-white p-2 md:p-4 rounded-xl">
               <div className="py-4 px-2">
-                <TbCodeDots className='md:w-40  md:h-40  w-28 h-28  font-thin text-black  '/>             
+                <TbCodeDots className='md:w-40  md:h-40  w-24 h-24  font-thin text-black  '/>             
              </div>
               <h1 className='text-black w-fit hidden sm:block'>fullstack developement</h1>
               <p className='text-gray-500 hidden sm:block'>I build user friendly web apps. </p>
@@ -141,7 +141,7 @@ export default function Home() {
 
             <div className="bg-white p-2 md:p-4 rounded-xl">
               <div className=" py-4 px-2">
-                <SiAltiumdesigner className='md:w-40  md:h-40  w-28 h-28 text-black  '/>              
+                <SiAltiumdesigner className='md:w-40  md:h-40  w-24 h-24 text-black  '/>              
               </div>
               <h1 className='text-black w-fit hidden sm:block'>Designing</h1>
               <p className='text-gray-500 hidden sm:block'>I build user friendly web apps. </p>
