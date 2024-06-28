@@ -1,23 +1,28 @@
 "use client";
 import React from "react";
 import { PinContainer } from "@/components/ui/3d-pin";
+import { RiSlashCommands2 } from "react-icons/ri";
 
 export function AnimatedPinDemo() {
   return (
-    <div className="h-[40rem] w-full flex items-center justify-center ">
+    <div className="  ">
       <PinContainer
         title="/ui.aceternity.com"
       >
-        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-          <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-            Aceternity UI
-          </h3>
-          <div className="text-base !m-0 !p-0 font-normal">
-            <span className="text-slate-500 ">
-              Customizable Tailwind CSS and Framer Motion Components.
-            </span>
-          </div>
-          <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+        <div className=" grid md:flex-col-2  gap-5 md:flex">
+           <div className="border-[#ababb25a] grid gap-y-3 border-[1.6px] w-fit px-6 py-8 rounded-md">
+              <h1 className='font-bold text-xl'>Placement module</h1>
+              <p className='font-thin'>Ecommerce website for buyers and sellers.Ecommerce website for buyers and sellers
+              Ecommerce website for buyers and sellers
+              Ecommerce website for buyers and sellers
+              </p>
+              <div className=" flex flex-wrap gap-2 w-[90%]">
+                <h1 className='bg-[#ababb25a] w-fit rounded-full text-sm px-2'>React.js</h1>
+                <h1 className='bg-[#ababb25a] w-fit rounded-full text-sm px-2'>Tailwind.css</h1>
+                <h1 className='bg-[#ababb25a] w-fit rounded-full text-sm px-2'>Springboot</h1>
+                <h1 className='bg-[#ababb25a] w-fit rounded-full text-sm px-2'>Mysql</h1>
+              </div>
+            </div>
         </div>
       </PinContainer>
     </div>

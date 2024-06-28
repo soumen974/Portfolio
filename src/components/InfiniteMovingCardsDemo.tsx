@@ -29,14 +29,14 @@ const testimonials = [
       "/images/soumenbhunia.svg",
     name: "next",
     title: "A Tale of Two Cities",
-    icon: <RiNextjsLine className="h-40 w-40 text-neutral-500 dark:text-white" />,
+    icon: <RiNextjsLine className="h-12 w-12 text-neutral-500 dark:text-white" />,
   },
   {
     quote:
       "/images/soumenbhunia.svg",
     name: "William Shakespeare",
     title: "react",
-    icon: <FaReact className="h-40 w-40 text-neutral-500 dark:text-white" />,
+    icon: <FaReact className="h-12 w-12 text-neutral-500 dark:text-white" />,
   }
   ,
   {
@@ -44,7 +44,7 @@ const testimonials = [
       "/images/soumenbhunia.svg",
     name: "William Shakespeare",
     title: "mongo db",
-    icon: <BiLogoMongodb className="h-40 w-40 text-neutral-500 dark:text-white" />,
+    icon: <BiLogoMongodb className="h-12 w-12 text-neutral-500 dark:text-white" />,
   }
   ,
   {
@@ -52,7 +52,7 @@ const testimonials = [
       "/images/soumenbhunia.svg",
     name: "",
     title: "exp",
-    icon: <SiExpress className="h-40 w-40 text-neutral-500 dark:text-white" />,
+    icon: <SiExpress className="h-12 w-12  text-neutral-500 dark:text-white" />,
   }
   ,
   {
@@ -60,7 +60,7 @@ const testimonials = [
       "/images/soumenbhunia.svg",
     name: "",
     title: "node",
-    icon: <FaNodeJs className="h-40 w-40 text-neutral-500 dark:text-white" />,
+    icon: <FaNodeJs className="h-12 w-12 text-neutral-500 dark:text-white" />,
   }
   ,
   {
@@ -68,7 +68,7 @@ const testimonials = [
       "/images/soumenbhunia.svg",
     name: "",
     title: "sql",
-    icon: <SiMysql className="h-40 w-40 text-neutral-500 dark:text-white" />,
+    icon: <SiMysql className="h-12 w-12 text-neutral-500 dark:text-white" />,
   }
   ,
   {
@@ -76,6 +76,6 @@ const testimonials = [
       "/images/soumenbhunia.svg",
     name: "",
     title: "sbt",
-    icon: <BiLogoSpringBoot className="h-40 w-40 text-neutral-500 dark:text-white" />,
+    icon: <BiLogoSpringBoot className="h-12 w-12 text-neutral-500 dark:text-white" />,
   }
 ];

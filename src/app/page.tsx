@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import {TracingBeamDemo} from "../components/TracingBeamDemo";
 import { InfiniteMovingCardsDemo } from "../components/InfiniteMovingCardsDemo";
+import { RiSlashCommands2 } from "react-icons/ri";
+import { SiAltiumdesigner } from "react-icons/si";
+import { TbCodeDots } from "react-icons/tb";
+import { PiCodeBold } from "react-icons/pi";
 
 export default function Home() {
 
@@ -30,10 +34,10 @@ export default function Home() {
         {/* recent experience */}
 
         <div className="py-5">
-          <h1 className='text-2xl md:text-4xl font-extrabold'>Recent Experience</h1>
+          <h1 className='text-2xl md:text-4xl '>Recent Experience</h1>
             <div className=" grid grid-cols-1 sm:grid-cols-2 gap-x-3 md:grid-cols-2  justify-between ">
 
-              <div className="bg-[#4d4d4d8e] sm:grid flex gap-x-5  gap-y-2  mt-4 p-3 w-full  border-[1.7px] rounded-md border-[#696969]">
+              <div className="bg-[#2e2e2ec6] sm:grid flex gap-x-5  gap-y-2  mt-4 p-3 w-full  border-[1.7px] rounded-md border-[#494949]">
                 
                 <div className="">
                   <Image src="/images/buildspaceso_logo.jpeg" className="w-16 h-16 rounded-md" alt="SoumenBhunia" width={64} height={64} />
@@ -46,7 +50,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-[#4d4d4d8e] sm:grid flex gap-x-5  gap-y-2  mt-4 p-3 w-full  border-[1.7px] rounded-md border-[#696969]">
+              <div className="bg-[#2e2e2ec6] sm:grid flex gap-x-5  gap-y-2  mt-4 p-3 w-full  border-[1.7px] rounded-md border-[#494949]">
                 
                 <div className=" p-1 bg-white  w-16 h-16  rounded-md">
                   <Image src="/images/zidio_development_logo.jpeg" className="" alt="SoumenBhunia" width={64} height={64} />
@@ -70,7 +74,7 @@ export default function Home() {
 
         {/* projects */}
         <div className="py-5">
-          <h1 className='text-2xl md:text-4xl font-extrabold'>Projects</h1>
+          <h1 className='text-2xl md:text-4xl '>Projects</h1>
           <div className="pt-5 grid md:flex-col-2  gap-5 md:flex">
             
             <div className="border-[#ababb25a] grid gap-y-3 border-[1.6px] w-fit px-6 py-8 rounded-md">
@@ -106,12 +110,52 @@ export default function Home() {
         {/* teck stack */}
 
         <div className="py-5">
-          <h1 className='text-2xl md:text-4xl font-extrabold'>Tech Stack</h1>
-          <div className="">
+          <h1 className='text-2xl md:text-4xl '>Tech Stack</h1>
+          <div className="py-2">
             <InfiniteMovingCardsDemo/>
           </div>
         </div>
 
+        {/* services */}
+        <div className="py-5">
+          <h1 className='text-2xl md:text-4xl '>Services</h1>
+          <div className="py-5 grid grid-cols-3 gap-3 md:grid-cols-3  justify-between ">
+
+            <div className="bg-white p-2 md:p-4 rounded-xl">
+              <div className=" py-4 px-2">
+                <PiCodeBold className='md:w-40  md:h-40  w-28 h-28 text-black '/>
+              </div>
+              <h1 className='text-black font-bold w-fit hidden sm:block'>Frontend developement</h1>
+              <p className='text-black font-thin hidden sm:block'>I build user friendly web apps. </p>
+
+            </div>
+
+            <div className="bg-white p-2 md:p-4 rounded-xl">
+              <div className="py-4 px-2">
+                <TbCodeDots className='md:w-40  md:h-40  w-28 h-28  font-thin text-black  '/>             
+             </div>
+              <h1 className='text-black w-fit hidden sm:block'>fullstack developement</h1>
+              <p className='text-gray-500 hidden sm:block'>I build user friendly web apps. </p>
+
+            </div>
+
+            <div className="bg-white p-2 md:p-4 rounded-xl">
+              <div className=" py-4 px-2">
+                <SiAltiumdesigner className='md:w-40  md:h-40  w-28 h-28 text-black  '/>              
+              </div>
+              <h1 className='text-black w-fit hidden sm:block'>Designing</h1>
+              <p className='text-gray-500 hidden sm:block'>I build user friendly web apps. </p>
+
+            </div>
+          </div>
+        </div>
+
+        {/* Licences and certifiaction */}
+
+        <div className="py-">
+          <h1 className='text-2xl md:text-4xl '>Licenses & certifications</h1>
+        </div>
+        
        
       </div>
     </>
