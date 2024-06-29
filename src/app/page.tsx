@@ -52,17 +52,17 @@ export default function Home() {
     {
       title: "Frontend developement",
       discription:"Smooth API Integration.",
-      icon: <PiCodeBold className='w-full h-full object-cover object-center  font-thin text-black sm:text-white  '/>,
+      icon: <PiCodeBold className='w-full h-full object-cover object-center  font-thin text-white  '/>,
     },
     {
       title: "Fullstack developement",
       discription:"Optimized System Architecture.",
-      icon: <TbCodeDots className='w-full h-full object-cover object-center  font-thin text-black sm:text-white   '/>,
+      icon: <TbCodeDots className='w-full h-full object-cover object-center  font-thin text-white   '/>,
     },
     {
       title: "Designing",
       discription:"UI/UX , Elegant Digital Experiences ",
-      icon: <SiAltiumdesigner className='w-full h-full object-cover object-center  font-thin  text-black sm:text-white   '/>,
+      icon: <SiAltiumdesigner className='w-full h-full object-cover object-center  font-thin  text-white   '/>,
     },
    
   ];
@@ -71,7 +71,7 @@ export default function Home() {
     {
       image:<Image src="/images/ibm-crt.svg" className="w-60 h-40 rounded-md" alt="ibm" width={64} height={64} />,
       company:"IBM",
-      logo:<Image src="/images/ibm_logo.jpeg" className=" sm:w-24 w-28 sm:h-24 h-28 rounded-md" alt="ibm" width={64} height={64} />,
+      logo:<Image src="/images/ibm_logo.jpeg" className="   max-w-min-24 sm:h-24 sm:w-24 max-h-min-24   rounded-md" alt="ibm" width={64} height={64} />,
       title:"Web Development with HTML, CSS, JavaScript",
       time:"- Jun 2023  ",
       Skills:[
@@ -81,10 +81,11 @@ export default function Home() {
 
       ],
     },
+
     {
       image:<Image src="/images/ibm-crt.svg" className="w-60 h-40 rounded-md" alt="ibm" width={64} height={64} />,
       company:"Meta",
-      logo:<Image src="/images/meta_logo.jpeg" className=" sm:w-24 w-28 sm:h-24 h-28 rounded-md" alt="ibm" width={64} height={64} />,
+      logo:<Image src="/images/meta_logo.jpeg" className="  max-w-min-24 sm:h-24 sm:w-24 max-h-min-24   rounded-md" alt="ibm" width={64} height={64} />,
       title:"React Basics",
       time:"- Oct 2023  ",
       Skills:[
@@ -92,10 +93,11 @@ export default function Home() {
 
       ],
     },
+
     {
       image:<Image src="/images/infosys-crt.svg" className="w-60 h-40 rounded-md" alt="ibm" width={64} height={64} />,
       company:"infosys",
-      logo:<Image src="/images/infosys_logo.jpeg" className=" sm:w-24 w-28 sm:h-24 h-28 rounded-md" alt="ibm" width={64} height={64} />,
+      logo:<Image src="/images/infosys_logo.jpeg" className="  max-w-min-24 sm:h-24 sm:w-24 max-h-min-24   rounded-md" alt="ibm" width={64} height={64} />,
       title:"Spring: An Overview of the Spring Framework",
       time:"- Nov 2023  ",
       Skills:[
@@ -103,10 +105,11 @@ export default function Home() {
 
       ],
     },
+
     {
       image:<Image src="/images/ibm-crt.svg" className="w-60 h-40 rounded-md" alt="ibm" width={64} height={64} />,
       company:"MongoDB",
-      logo:<Image src="/images/mongodbinc_logo.jpeg" className=" sm:w-24 w-28 sm:h-24 h-28 rounded-md" alt="ibm" width={64} height={64} />,
+      logo:<Image src="/images/mongodbinc_logo.jpeg" className=" max-w-min-24 sm:h-24 sm:w-24 max-h-min-24  rounded-md" alt="ibm" width={64} height={64} />,
       title:"MongoDB for SQL Professionals",
       time:"- Jun 2024  ",
       Skills:[
@@ -179,7 +182,7 @@ export default function Home() {
                   </p>
                   <div className=" flex flex-wrap gap-2 w-[90%]">
                     {project.Skills.map((skill)=>(
-                      <h1 key={skill.name} className='odd:bg-black even:text-black even:bg-violet-500 w-fit rounded-full text-sm px-2'>{skill.name}</h1>
+                      <h1 key={skill.name} className='odd:bg-black  even:bg-indigo-400 w-fit rounded-full text-sm t px-[0.6rem]'>{skill.name}</h1>
                     ))}
                   </div>
               </div>
@@ -200,11 +203,11 @@ export default function Home() {
           <h1 className='text-2xl md:text-4xl '>Services</h1>
           <div className="py-5 grid grid-cols-3 gap-3 md:grid-cols-3  justify-between ">
           {services.map((services) => (
-            <div key={services.title} className=" flex justify-center sm:grid bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500  p-2 md:p-4 rounded-xl">
-              <div className=" py-4 h-20 w-20 flex justify-center ">
+            <div key={services.title} className=" group/service flex justify-center sm:grid max-sm:hover:bg-none   bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500  p-2 md:p-4 rounded-xl">
+              <div className=" py-4 h-20 w-20 flex justify-center  group-hover/service:hidden sm:group-hover/service:block">
                 {services.icon}
               </div>
-              <h1 className=' text-xl text-white font-bold w-fit hidden sm:block'>{services.title}</h1>
+              <h1 className=' text-[0.8rem] sm:text-xl text-white sm:font-bold sm:w-fit sm:group-hover/service:block   hidden group-hover/service:flex items-center justify-center sm:block w-20 '>{services.title}</h1>
               <p className='font-normal text-base text-slate-100 hidden sm:block'>{services.discription} </p>
             </div>
           ))}
@@ -217,14 +220,14 @@ export default function Home() {
           <h1 className='text-2xl md:text-4xl '>Licenses & certifications</h1>
           <div className="py-3 flex-col-reverse flex">
             {Licences_and_certifiaction.map((LnC)=>(
-              <div key={LnC.title} className=" py-5 flex gap-5">
+              <div key={LnC.title} className=" py-5 flex shrink-0 gap-5">
 
-                <div className="">
+                <div className="flex items-center">
                   {LnC.logo}
                 </div>
 
                 <div className=" grid">
-                  <h1 className="font-bold">
+                  <h1 className="font-bold truncate ">
                     {LnC.title}
                   </h1>
 
@@ -237,7 +240,7 @@ export default function Home() {
                   </h1>
                   {/* Skills */}
 
-                  <div className="w-fit flex gap-1 overflow-x-hidden">
+                  <div className="w-fit py-2 flex gap-1 overflow-x-hidden">
                     {LnC.Skills.map((skill)=>(
                       <h1 key={skill.name} className='bg-green-400 text-black font-bold flex items-center text-[0.6rem] px-2 rounded-full'>
                         {skill.name}
