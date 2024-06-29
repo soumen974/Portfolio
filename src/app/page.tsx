@@ -5,6 +5,9 @@ import { RiSlashCommands2 } from "react-icons/ri";
 import { SiAltiumdesigner } from "react-icons/si";
 import { TbCodeDots } from "react-icons/tb";
 import { PiCodeBold } from "react-icons/pi";
+import { GlobeDemo } from '@/components/GlobeDemo';
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
 
@@ -153,7 +156,7 @@ export default function Home() {
             <div className=" grid grid-cols-1 sm:grid-cols-2 gap-x-3 md:grid-cols-2  justify-between ">
             
               {recent_experience.map((experience)=>(
-              <div key={experience.company} className="bg-[#2e2e2ec6] sm:grid flex gap-x-5  gap-y-2  mt-4 p-3 w-full  border-[1.7px] rounded-md border-[#494949]">
+              <div key={experience.company} className="bg-[#2e2e2ec6] sm:grid flex gap-x-5  gap-y-2  mt-4 p-3 w-full  border-[1.7px] rounded-xl sm:rounded-md border-[#494949]">
                 <div className="">
                   {experience.image}
                 </div>
@@ -175,7 +178,7 @@ export default function Home() {
           <h1 className='text-2xl md:text-4xl '>Projects</h1>
           <div className="pt-5 grid md:flex-col-2  gap-5 md:flex">
             {projects.map((project)=>(
-              <div key={project.title} className="border-[#ababb25a] grid gap-y-3 border-[1.6px] w-fit px-6 py-8 rounded-md">
+              <div key={project.title} className="border-[#ababb25a] grid gap-y-3 border-[1.6px] w-fit px-6 py-8 rounded-xl sm:rounded-md">
                   <h1 className='font-bold text-xl'>{project.title}</h1>
                   <p className='font-thin'>
                     {project.discription}
@@ -256,7 +259,12 @@ export default function Home() {
 
         </div>
 
-        {/* Education */}
+        
+         {/* message */}
+
+         <div className="py-5 ">
+            <GlobeDemo/>
+          </div>
         
        
       </div>
