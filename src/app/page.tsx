@@ -181,7 +181,7 @@ export default function Home() {
                   </p>
                   <div className=" flex flex-wrap gap-2 w-[90%]">
                     {project.Skills.map((skill)=>(
-                      <h1 className='odd:bg-black even:text-black even:bg-violet-500 w-fit rounded-full text-sm px-2'>{skill.name}</h1>
+                      <h1 key={skill.name} className='odd:bg-black even:text-black even:bg-violet-500 w-fit rounded-full text-sm px-2'>{skill.name}</h1>
                     ))}
                   </div>
               </div>
