@@ -5,8 +5,6 @@ import { RiSlashCommands2 } from "react-icons/ri";
 import { SiAltiumdesigner } from "react-icons/si";
 import { TbCodeDots } from "react-icons/tb";
 import { PiCodeBold } from "react-icons/pi";
-import { Html } from 'next/document';
-import { title } from 'process';
 
 export default function Home() {
 
@@ -174,7 +172,7 @@ export default function Home() {
           <h1 className='text-2xl md:text-4xl '>Projects</h1>
           <div className="pt-5 grid md:flex-col-2  gap-5 md:flex">
             {projects.map((project)=>(
-              <div className="border-[#ababb25a] grid gap-y-3 border-[1.6px] w-fit px-6 py-8 rounded-md">
+              <div key={project.title} className="border-[#ababb25a] grid gap-y-3 border-[1.6px] w-fit px-6 py-8 rounded-md">
                   <h1 className='font-bold text-xl'>{project.title}</h1>
                   <p className='font-thin'>
                     {project.discription}
@@ -241,7 +239,7 @@ export default function Home() {
 
                   <div className="w-fit flex gap-1 overflow-x-hidden">
                     {LnC.Skills.map((skill)=>(
-                      <h1 className='bg-green-400 text-black font-bold flex items-center text-[0.6rem] px-2 rounded-full'>
+                      <h1 key={skill.name} className='bg-green-400 text-black font-bold flex items-center text-[0.6rem] px-2 rounded-full'>
                         {skill.name}
                       </h1>
                     ))}
