@@ -22,7 +22,7 @@ export default function Home() {
             <div className="flex absolute sm:left-20 right-5 sm:right-0 top-5 w-fit  border border-transparent dark:border-white/[0.2] rounded-full dark:bg-[#18181B] bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]  p-2 px-4 items-center justify-center ">
             Who
             </div>          
-            <div  className="border-[#ababb25a] grid gap-y-3 border-[1.6px] w-fit px-6 py-8 rounded-xl sm:rounded-md leading-6">
+            <div  className="border-[#ababb25a] text-white grid gap-y-3 border-[1.6px] w-fit px-6 py-8 rounded-xl sm:rounded-md leading-6 text-md font-light">
                 <p>I&apos;m a web developer passionate about creating responsive websites using React.js, Next.js, and Tailwind CSS. I&apos;ve collaborated with design and backend teams at Oasis Infobyte to deliver high-quality web solutions. Currently, I&apos;m pursuing a B.Tech in Computer Science at Centurion University of Technology and Management, gaining a strong foundation in programming and software engineering.
                 
                 </p>

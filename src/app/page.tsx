@@ -163,14 +163,14 @@ const Home: React.FC =()=>{
             <div className=" grid grid-cols-1 sm:grid-cols-2 gap-x-3 md:grid-cols-2  justify-between ">
             
               {recent_experience.map((experience)=>(
-              <div key={experience.company} className="bg-[#2e2e2ec6] sm:grid flex gap-x-5  gap-y-2  mt-4 p-3 w-full  border-[1.7px] rounded-xl sm:rounded-md border-[#494949]">
+              <div key={experience.company} className="bg-[#2d2b2bc6] border border-black/[0.2] dark:border-white/[0.2] sm:grid flex gap-x-5  gap-y-2  mt-4 p-3 w-full rounded-xl sm:rounded-md ">
                 <div className="">
                   {experience.image}
                 </div>
 
                 <div className="">
-                  <h1 className='font-bold'>{experience.position}</h1>
-                  <h2 className='text-white text-sm font-thin'>{experience.company}</h2>
+                  <h1 className=''>{experience.position}</h1>
+                  <h2 className='text-white text-sm font-light'>{experience.company}</h2>
                   <h3 className='text-gray-100 font-thin text-sm' >{experience.time}</h3>
                 </div>
               </div>
@@ -198,6 +198,7 @@ const Home: React.FC =()=>{
 
                     <div className="grid gap-2">
                         <div className="">
+                          <h2></h2>
                           <h1>{project.title}</h1>
                         </div>
 

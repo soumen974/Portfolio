@@ -1,10 +1,12 @@
 import Image from 'next/image';
-
+import Link from 'next/link';
+import { FaGithub } from "react-icons/fa";
 export default function Home() {
   
   const projects = [
     {
       title:"Cubikor",
+      Ghlink:"https://github.com/soumen974/Cubikor-react",
       image:<Image src="/images/cubikor.svg" className="h-full w-full  rounded-md" alt="SoumenBhunia" width={64} height={64} />,
       discription:" The Cube E-Commerce , is a web application designed to provide users with an intuitive and seamless shopping experience.and user-friendly interface for browsing and purchasing products online.",
       Skills:[
@@ -17,8 +19,9 @@ export default function Home() {
     },
     {
       title:"Placement module",
+      Ghlink:"https://github.com/sambit826059/Placement_Module",
       image:<Image src="/images/placement_module.svg" className="w-fit  rounded-md " alt="SoumenBhunia" width={64} height={64} />,
-      discription:" The Cube E-Commerce , is a web application designed to provide users with an intuitive and seamless shopping experience.and user-friendly interface for browsing and purchasing products online.",
+      discription:" The Placement Module is designed to facilitate seamless interaction and communication between students, the training and placement cell, and hiring managers.Here's the module of group can benefit from this ",
       Skills:[
         {name:"React.js"},
         {name:"Tailwind.css"},
@@ -28,8 +31,9 @@ export default function Home() {
     },
     {
       title:"Workfolio",
+      Ghlink:"https://github.com/soumen974/WorkFolio",
       image:<Image src="/images/workfolio.svg" className="w-fit rounded-md " alt="SoumenBhunia" width={64} height={64} />,
-      discription:" The Cube E-Commerce , is a web application designed to provide users with an intuitive and seamless shopping experience.and user-friendly interface for browsing and purchasing products online.",
+      discription:" Workfolio [Resume Builder] is a responsive React.js portfolio showcasing skills, achievements, and experiences, featuring a dynamic portfolio, mobile-first design, and an interactive resume creation form.",
       Skills:[
         {name:"React.js"},
         {name:"Tailwind.css"},
@@ -39,8 +43,9 @@ export default function Home() {
     },
     {
       title:"Cashslash",
+      Ghlink:"https://github.com/soumen974/CashSlash",
       image:<Image src="/images/cashlash.svg" className="w-fit  rounded-md " alt="SoumenBhunia" width={64} height={64} />,
-      discription:" The Cube E-Commerce , is a web application designed to provide users with an intuitive and seamless shopping experience.and user-friendly interface for browsing and purchasing products online.",
+      discription:" CashSlash is designed to revolutionize how you manage your money. Whether you're tracking personal expenses, splitting bills with friends, or analyzing your financial progress, CashSlash has you covered.",
       Skills:[
         {name:"React.js"},
         {name:"Tailwind.css"},
@@ -73,8 +78,11 @@ export default function Home() {
                   {project.image}
                   </div>
 
-                  <div className="grid gap-2">
+                  <div className="grid gap-2 relative">
                       <div className="">
+                        <Link href={project.Ghlink} className='absolute border-none bg-white w-fit rounded-full -top-8 right-8'>
+                        < FaGithub className='w-8 text-black h-8'/>
+                        </Link>
                         <h1>{project.title}</h1>
                       </div>
 

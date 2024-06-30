@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div>
         <footer className='py-5' >
-          <h2 className='flex justify-center text-xl font-bold py-6'>Follow me </h2>
+          <h2 className='flex justify-center text-xl text-white font-light py-6'>Follow me </h2>
           <div className=" flex justify-evenly px-0 sm:px-32">
             <Link href={'https://github.com/soumen974'}><FaGithub className='h-6 w-6 '/></Link>
             <Link href={'https://www.linkedin.com/in/soumen-bhunia-me-dvp/'}><FaLinkedin className='h-6 w-6'/></Link>
