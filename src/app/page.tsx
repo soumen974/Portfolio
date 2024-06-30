@@ -6,13 +6,10 @@ import { SiAltiumdesigner } from "react-icons/si";
 import { TbCodeDots } from "react-icons/tb";
 import { PiCodeBold } from "react-icons/pi";
 import { GlobeDemo } from '@/components/GlobeDemo';
-import { RiTwitterXFill } from "react-icons/ri";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaUpwork } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
+import Link from 'next/link';
 
-export default function Home() {
+const Home: React.FC =()=>{
 
   const recent_experience= [
     {
@@ -161,7 +158,7 @@ export default function Home() {
 
         {/* recent experience */}
 
-        <div className="py-5">
+        <div className="pt-5">
           <h1 className='text-2xl md:text-4xl '>Recent Experience</h1>
             <div className=" grid grid-cols-1 sm:grid-cols-2 gap-x-3 md:grid-cols-2  justify-between ">
             
@@ -178,29 +175,49 @@ export default function Home() {
                 </div>
               </div>
             ))}
-
             </div>
 
+            <SeeMore link={'/'}/>
         </div>
 
         {/* projects */}
         <div className="py-5">
           <h1 className='text-2xl md:text-4xl '>Projects</h1>
-          <div className="pt-5 grid md:flex-col-2  gap-5 md:flex">
+          <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 gap-5 md:grid-cols-2  justify-between  ">
             {projects.map((project)=>(
-              <div key={project.title} className="border-[#ababb25a] grid gap-y-3 border-[1.6px] w-fit px-6 py-8 rounded-xl sm:rounded-md">
-                  <h1 className='font-bold text-xl'>{project.title}</h1>
-                  <p className='font-thin'>
-                    {project.discription}
-                  </p>
-                  <div className=" flex flex-wrap gap-2 w-[90%]">
-                    {project.Skills.map((skill)=>(
-                      <h1 key={skill.name} className='odd:bg-black  even:bg-indigo-400 w-fit rounded-full text-sm t px-[0.6rem]'>{skill.name}</h1>
-                    ))}
-                  </div>
+              <div key={project.title} className=" ">
+                <div className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col gap-4 items-start w-fit mx-auto p-4 relative ">
+                    <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
+                    <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
+                    <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
+                    <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
+
+                    <div className="">
+                    
+                    </div>
+
+                    <div className="grid gap-2">
+                        <div className="">
+                          <h1>{project.title}</h1>
+                        </div>
+
+                        <h2 className="dark:text-white text-black  text-sm font-light">
+                          {project.discription}
+                        </h2>
+                    </div>
+                    <div className=" flex flex-wrap gap-2 w-[90%]">
+                      {project.Skills.map((skill)=>(
+                        <h1 key={skill.name} className='lex w-fit text-[0.7rem] border border-transparent dark:border-white/[0.2] rounded-full dark:bg-[#18181B] bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]  p-1 px-4 items-center justify-center '>{skill.name}</h1>
+                      ))}
+                    </div>
+                </div>
+
+              
               </div>
+
             ))}
           </div>
+          <SeeMore link={'/projects'}/>
         </div>
 
         {/* teck stack */}
@@ -266,6 +283,7 @@ export default function Home() {
               </div>
             ))}
            </div>
+           <SeeMore link={'/'}/>
 
         </div>
 
@@ -281,3 +299,43 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;
+
+
+interface IconProps {
+  className?: string;
+}
+
+const Icon: React.FC<IconProps> = ({ className }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className={className}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
+    </svg>
+  );
+};
+
+interface SeeMoreProps{
+  link?:string;
+}
+
+const SeeMore:React.FC<SeeMoreProps> = ({ link }: any) => {
+  return (
+    <Link href={link}>
+      <div className='flex text-[0.9rem] justify-center gap-1 pt-4'>
+        <h6>See more</h6>
+        <div className='flex justify-center items-center '>
+          <IoIosArrowDown className='flex items-center w-4 h-4 justify-center ' />
+        </div>
+      </div>
+    </Link>
+  );
+};
+
