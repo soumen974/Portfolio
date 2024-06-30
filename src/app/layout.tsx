@@ -28,6 +28,10 @@ export default function RootLayout({
     <html lang="en" className="dark">
       
     <body  className={''}>
+      <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
+    
     <div className="relative mx-auto max-w-screen  px-2  ">
       <div className="absolute -z-10 inset-x-0 -inset-y-[4rem] ">
           <BackgroundBeams/>
