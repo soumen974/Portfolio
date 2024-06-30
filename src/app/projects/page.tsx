@@ -17,7 +17,7 @@ export default function Home() {
     },
     {
       title:"Placement module",
-      image:<Image src="/images/cubikor.svg" className="w-fit  rounded-xl " alt="SoumenBhunia" width={64} height={64} />,
+      image:<Image src="/images/placement_module.svg" className="w-fit  rounded-md " alt="SoumenBhunia" width={64} height={64} />,
       discription:" The Cube E-Commerce , is a web application designed to provide users with an intuitive and seamless shopping experience.and user-friendly interface for browsing and purchasing products online.",
       Skills:[
         {name:"React.js"},
@@ -38,8 +38,8 @@ export default function Home() {
       ],
     },
     {
-      title:"Cashlash",
-      image:<Image src="/images/cubikor.svg" className="w-fit  rounded-xl " alt="SoumenBhunia" width={64} height={64} />,
+      title:"Cashslash",
+      image:<Image src="/images/cashlash.svg" className="w-fit  rounded-md " alt="SoumenBhunia" width={64} height={64} />,
       discription:" The Cube E-Commerce , is a web application designed to provide users with an intuitive and seamless shopping experience.and user-friendly interface for browsing and purchasing products online.",
       Skills:[
         {name:"React.js"},
@@ -88,13 +88,18 @@ export default function Home() {
 
           ))}
         </div>
+        
       </div>
     </div>
    </>
   );
 }
 
-export const Icon = ({ className, ...rest }: any) => {
+interface IconProps {
+  className?: string;
+}
+
+const Icon: React.FC<IconProps> = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +108,6 @@ export const Icon = ({ className, ...rest }: any) => {
       strokeWidth="1.5"
       stroke="currentColor"
       className={className}
-      {...rest}
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
     </svg>
