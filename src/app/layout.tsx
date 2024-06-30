@@ -10,11 +10,9 @@ import { AnimatedPinDemo } from "@/components/AnimatedPinDemo";
 import { TracingBeamDemo } from "@/components/TracingBeamDemo";
 import EvervaultCard  from "@/components/EvervaultCardDemo";
 import  BackgroundBeams  from "@/components/ui/background-beams";
+import Footer from "./components/Footer";
+import  Navigationbar  from "./components/Navbar";
 
-
-import  Navigationbar  from "../components/Navigation/Navigationbar";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Soumen Bhunia | Portfolio",
@@ -38,29 +36,15 @@ export default function RootLayout({
          <div className="z-50"><Navigationbar/></div>
          <div className="max-w-2xl mx-auto mt-20 ">
          {children}
-         {/* <TracingBeamDemo/> */}
+         
+            <div className="">
+               <Footer/>
+            </div>
          </div>
+         
       </div>
     </div>
 
-      {/* <div className="">
-        <HeroHighlightDemo/>
-        <HeroParallax/>
-        <h1 className="flex justify-center py-10 text-4xl">Projects</h1>
-
-        <div className="grid grid-cols-2 px-10 py-10 lg:grid-cols-3">
-          <AnimatedPinDemo />
-          <EvervaultCard />
-          <EvervaultCard/>
-          <EvervaultCard/>
-          <EvervaultCard/>
-          <EvervaultCard/>
-        </div>
-        
-        
-       
-        <BackgroundBeamsDemo/>
-      </div> */}
     </body>
   </html>
   );

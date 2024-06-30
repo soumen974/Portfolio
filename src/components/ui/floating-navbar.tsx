@@ -10,6 +10,7 @@ import { cn } from "@/utils/cn";
 import Link from "next/link";
 import { RiTwitterXLine } from "react-icons/ri";
 import { MdOutlineLightMode } from "react-icons/md";
+import { useRouter } from 'next/router';
 
 export const FloatingNav = ({
   navItems,
@@ -43,6 +44,8 @@ export const FloatingNav = ({
     }
   });
 
+  //  const router = useRouter();
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -64,18 +67,22 @@ export const FloatingNav = ({
       >
         <div className=" flex flex-row-reverse  justify-between">
           <div className="flex    border border-transparent dark:border-white/[0.2] rounded-full dark:bg-[#18181B] bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]  pr-2 pl-4 py-2  items-center justify-center space-x-2">
-            {navItems.map((navItem: any, idx: number) => (
-              <Link
+            {navItems.map((navItem, idx) => (
+              <div
                 key={`link=${idx}`}
-                href={navItem.link}
                 className={cn(
-                  "relative dark:text-neutral-50 items-center flex space-x-4 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+                  "relative dark:text-neutral-50 items-center flex space-x-4 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500",
+                  
                 )}
-              >
+             >
+            <Link href={navItem.link}>
+              <div className="flex items-center space-x-4">
                 <span className="block sm:hidden">{navItem.icon}</span>
                 <span className="hidden sm:block text-sm">{navItem.name}</span>
-              </Link>
-            ))}
+              </div>
+            </Link>
+          </div>
+        ))}
             <button className=" text-sm font-medium relative   text-black dark:text-white  px-4 ">
               <span className="block sm:hidden"><RiTwitterXLine/></span>
               <span className="hidden sm:block text-sm">Connect me</span>

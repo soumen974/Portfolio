@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { RiTwitterXFill } from "react-icons/ri";
+import Link from "next/link";
 
 
 
@@ -414,21 +415,21 @@ export function GlobeDemo() {
           }}
           className="div"
         >
-          <div className="bg-green-400 p-5 flex justify-between">
+          <div className="bg-green-400 p-5 flex items-end justify-between">
               <div className="">
                 <h1 className='text-black font-bold text-xl flex '>Want to hire me ?</h1>
-                <h2 className='flex  text-black'>Drop your message and let&apos;s discuss about your project. </h2>
+                <h2 className='group  text-black'>Drop your message and let&apos;s discuss about your project{' '}<span className="group-hover:translate-x-1 translate-x-2 transition-translate transition duration-200 ">&rarr;</span> </h2>
               </div>
 
-              <div className="">
-                 <RiTwitterXFill className='text-black h-7 w-7' />    
-                      
-              </div>
+              <Link href={'https://twitter.com/Soumen81845556'} className="">
+                 <RiTwitterXFill className='text-black h-7 w-7' />     
+              </Link>
+              
           </div>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black rounded-xl to-white z-20" />
         <div className="absolute w-full   h-full ">
-          <World data={sampleArcs} globeConfig={globeConfig} />;
+          <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
     </div>

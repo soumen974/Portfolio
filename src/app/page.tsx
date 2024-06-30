@@ -8,6 +8,9 @@ import { PiCodeBold } from "react-icons/pi";
 import { GlobeDemo } from '@/components/GlobeDemo';
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaUpwork } from "react-icons/fa6";
 
 export default function Home() {
 
@@ -124,11 +127,19 @@ export default function Home() {
     
     
   ]
+
+  const footer = [
+    {
+      links:[
+        {name:"Home"},
+      ]
+    },
+  ]
   
 
   return (
     <>
-      <div className="h-100vh">
+      <div className="">
         {/* intro */}
         <div className="flex-col-1 gap-y-2 flex flex-wrap-reverse justify-between">
           <div className="">
@@ -142,7 +153,6 @@ export default function Home() {
             <Image src="/images/soumenbhunia.svg" className="w-16 h-16 rounded-md" alt="SoumenBhunia" width={64} height={64} />
           </div>
         </div>
-
 
         <div className="py-8 text-[#62626A] text-[1.1rem]">
          <a href="https://github.com/soumen974" className='text-white'>IBM</a> certified web developer, I builds user friendly web apps. <br/>
@@ -262,10 +272,10 @@ export default function Home() {
         
          {/* message */}
 
-         <div className="py-5 ">
+          <div className="py-5 ">
             <GlobeDemo/>
           </div>
-        
+
        
       </div>
     </>
